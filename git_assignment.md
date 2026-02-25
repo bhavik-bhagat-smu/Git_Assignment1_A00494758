@@ -1,5 +1,11 @@
-# Git Assignment 1
-## Bhavik Bhagat (A00494758)
+---
+title: "Git Assignment 1"
+author: "Bhavik Bhagat (A00494758)"
+geometry: margin=1in
+header-includes:
+  - \usepackage{fvextra}
+  - \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+---
 
 # Git Assignment Documentation
 
