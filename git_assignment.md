@@ -1,8 +1,7 @@
-# Git Assignment
+# Git Assignment 1
+## Bhavik Bhagat (A00494758)
 
-## Bhavik Bhagat - A00494758
-
-
+# Git Assignment Documentation
 
 ### 1. Repository Initialization and Status Check
 ```bash
@@ -12,9 +11,9 @@ git init
 git status
 ```
 
-![q1](q1.png)
+![Screenshot 1: Repository Initialization and Status Check](q1.png)
 
-
+***
 ### 2. File Creation and Version Control
 ```bash
 touch countries.txt
@@ -37,10 +36,10 @@ git commit -m "Adding numbers"
 git log
 ```
 
-![q2_1](q2_1.png)
-![q2_2](q2_2.png)
+![Screenshot 2.1: File Creation (Countries and Shapes)](q2_1.png)
+![Screenshot 2.2: Commit History for Countries and Shapes](q2_2.png)
 
-
+***
 ### 3. Branch Creation and Commit
 ```bash
 git checkout -b LearnAnalytics
@@ -53,9 +52,9 @@ git commit -m "Add: languages to Learn-Analystics branch"
 git log
 ```
 
-![q3](q3.png)
+![Screenshot 3: Branch Creation and Initial Commit on LearnAnalytics](q3.png)
 
-
+***
 ### 4. Merging Conflicting Changes
 ```bash
 git checkout -b user1
@@ -66,7 +65,7 @@ Make changes
 git add countries.txt
 git commit -m "change: countries to European Countries"
 ```
-![q4_1](q4_1.png)
+![Screenshot 4.1: User 1 changes in countries.txt](q4_1.png)
 
 ```bash
 git checkout main
@@ -78,7 +77,7 @@ Make changes
 git add countries.txt
 git commit -m "change: countries to Asian Countries"
 ``` 
-![q4_2](q4_2.png)
+![Screenshot 4.2: User 2 changes in countries.txt](q4_2.png)
 
 
 ```bash
@@ -87,9 +86,9 @@ git merge user1
 git add countries.txt
 git commit -m "change: resolved merge conflicts by keeping all countries"
 ```
-![q4_3](q4_3.png)
+![Screenshot 4.3: Resolved Merge Conflicts in combine_countries branch](q4_3.png)
 
-
+***
 ### 5. Stashing and Applying Changes
 ```bash
 git checkout main
@@ -98,7 +97,7 @@ echo "Australia" >> countries.txt
 echo "Brazil" >> countries.txt
 ```
 
-![q5_1](q5_1.png)
+![Screenshot 5.1: Changes to be stashed in user3 branch](q5_1.png)
 
 
 ```bash
@@ -109,7 +108,7 @@ git add countries.txt
 git commit -m "add: UK"
 ```
 
-![q5_2](q5_2.png)
+![Screenshot 5.2: Committing UK to main branch](q5_2.png)
 
 ```bash
 git checkout user3
@@ -117,9 +116,9 @@ git stash pop
 git add countries.txt
 git commit -m "add: Australia and Brazil"
 ```
-![q5_3](q5_3.png)
+![Screenshot 5.3: Applying stashed changes to user3 branch after main update](q5_3.png)
 
-
+***
 ### 6. Advanced Git Workflow
 ```bash
 git checkout main
@@ -134,7 +133,7 @@ git add random.txt
 git commit -m "add: random"
 ```
 
-![q6_1](q6_1.png)
+![Screenshot 6.1: Bugfix branch commits](q6_1.png)
 
 ```bash
 git checkout main
@@ -145,5 +144,6 @@ ls -la
 
 In this case, cherry-pick took the bugfix.txt file from the bugfix branch and added it to the main branch.
 
-![q6_2](q6_2.png)
-![q6_3](q6_3.png)
+![Screenshot 6.2: Cherry-picking onto main branch](q6_2.png)
+![Screenshot 6.3: Verification of cherry-picked file in main branch](q6_3.png)
+***
